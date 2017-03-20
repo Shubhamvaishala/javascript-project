@@ -15,20 +15,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This file contains the Activity modules block.
+ * Version details
  *
- * @package    block_activity_modules
+ * @package    block_caldata.
  * @copyright  1999 onwards Martin Dougiamas (http://dougiamas.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-
-class block_calculator extends block_list {
-    function init() {
-        $this->title = get_string('pluginname', 'block_calculator');
-    }
-
-  }
-
+$plugin->version   = 2016052323;        // The current plugin version (Date: YYYYMMDDXX)
+$plugin->requires  = 2016051900;        // Requires this Moodle version
+$plugin->component = 'block_caldata'; // Full name of the plugin (used for diagnostics)
