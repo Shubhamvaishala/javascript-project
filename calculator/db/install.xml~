@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/calculator/db" COMMENT="XMLDB file for Moodle blocks/calculator"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<TABLE NAME="calculator_block" COMMENT="this table is used for calculator data">
+      <FIELDS>
+        <FIELD NAME="Id" TYPE="int" LENGTH="50" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="UId" TYPE="int" LENGTH="50" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="qutn" TYPE="varchar" LENGTH="50" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="Data" TYPE="varchar" LENGTH="50" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="Id"/>
+      </KEYS>
+    </TABLE>
+</XMLDB>
