@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var pets = [];
+            pets[0] = "one";  
+            pets[1] = "two";
+            pets[2] = "three";
+            pets[3] = "fore";
+            pets[6] = "five"; 
+            pets.push("one", "xyz" , "abc");
+            pets[10] = "ajay";
+            pets.push("anand");
+            var a = pets.slice(0,2);
+            document.write(a);
+           
+            pets.unshift("shubham");
+            
+            var species = [];
+            species.push("hindu", "muslim", "crestn", "kapala", "sardar");
+            document.write(species, " "  , pets);
+           
+        </script>
+        <br/>
+        <script>
+            var pets = [];
+            pets[0] = "one";  
+            pets[1] = "two";
+            pets[2] = "three";
+            pets[3] = "fore";
+            pets[6] = "five"; 
+            pets.push("one", "xyz" , "abc");
+            pets[10] = "ajay";
+            pets.pop(pets[0]="shubham");
+            pets.pop();
+            
+            var species = [];
+            species.push("hindu", "muslim", "crestn", "kapala", "sardar");
+            var veg = ["sahi", "kadhai", "chap", "pulaw"];
+            var non_veg = ["muttn", "kabab", "tandur", "klgy"];
+            
+            var total = veg.concat(non_veg,pets,species);
+            document.write(total);    
+        </script>
+        <br/>
+        <script>
+            var array = ["dog", "cat", "fly", "bug", "ox"];
+            array.splice(3, 3, "duck", "pig", "emu");
+            document.write(array);
+        </script>
+        <br/>
+        <script>
+            var array_pets = ["dog", "cat", "fly", "bug", "ox"];
+            var copies_array = array_pets.slice(0,3);
+            document.write(copies_array);
+    
+        </script>
+        <script>
+           
+            function setCookie(cname,cvalue)
+            {
+                 cvalue = "shubham";
+                document.cookie = cname + "=" + cvalue;
+            }
+        </script>
+       
+        <script>
+           
+        document.cookie = "username=cvalue";
+        var x = document.cookie;
+        alert(x);
+        </script>
+     
+        <p id="ps"></p>
+    </body>
+</html>

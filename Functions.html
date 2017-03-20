@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+        function tellTime() {
+             var now = new Date();
+             var theHr = now.getHours();
+             var theMin = now.getMinutes();
+             alert("Current time: "+ theHr + ":" + theMin); 
+             }
+            
+         </script>
+         <input type="submit" value="click" onclick="tellTime()">
+         <script>
+             function greetUser(){
+                 alert("Hello, there")
+             }
+         </script>
+          <input type="submit" value="click" onclick="greetUser()">
+          <br/>
+          <script>
+                 var a = 2;
+                 var b = 3;    
+             function info(a, b){  
+                 var x = a * b;
+                 return x;      
+             }
+         </script>
+          <input type="submit" value="info" onclick="document.write(info(a, b))">
+          <br/>
+            <script>
+                 var greetying = "hello";
+             function display(greetying){
+                 alert(greetying);
+             }
+         </script>
+          <input type="submit" value="click" onclick="display(greetying)">
+          <br/>
+          
+              <br/>
+              <br/>
+              <script>
+               var x = function (a, b){
+                    var a =2;
+                    var b =3;
+                    return a * b;
+                }
+              </script>
+               <input type="submit" value="info" onclick="document.write(x(a, b))">
+               <br/>
+               <br/>
+                <script>
+            var m = "march";
+            var string = "s winner number is";
+            var num = "23";
+      function showMessage(m, string, num){
+            alert(m+"'" + string +" "+ num);
+            }
+        </script>
+        <input type="submit" value="info" onclick="showMessage(m, string, num)">
+        
+        
+        
+        
+        <!-- function using with if else -->
+        <script> 
+            
+             function calcTot(merchTot) {
+             var orderTot;
+             
+
+             var merchTot = 100;
+             if (merchTot >= 100) 
+             {
+             orderTot = merchTot; 
+             
+             }
+             else if (merchTot < 50.01) 
+             {
+             orderTot = merchTot + 5;
+             }
+             else {
+             orderTot = merchTot + 5 + (.03 * (merchTot - 50));
+             }
+             return orderTot;
+         }
+
+        </script>
+         <input type="submit" value="find total" onclick="calcTot(merchTot)">
+         <br/>
+         
+         <script>
+            
+             function add(){
+                 var theSum = 5+7;
+                
+                 return theSum;
+             }
+         </script>
+           <input type="submit" value="Sum" onclick="document.write(add())">
+           <script>
+               var theSum = add();
+                  document.write(theSum);
+           </script>
+    </body>
+    
+</html>
+
+
+

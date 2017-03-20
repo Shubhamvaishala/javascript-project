@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+          var d = new Date();
+          var today = d.getDate();
+          document.write(today);
+        </script>
+        <br/>
+        <script>
+            var day = new Date("2016,12,2");
+            document.write(day);
+            </script>
+            <br/>
+            <script>
+                var d = new Date();
+                var day = d.getDay();
+                document.write(d);
+                
+            </script>
+        <br/>
+        <script>
+            var d = new Date();
+            var month = d.getMonth();
+            document.write(month);
+            
+        </script>
+        <br/>
+        <script>
+            var d = new Date();
+            var y = d.getFullYear();
+            documnet.write(y);
+        </script>
+        <br/>
+        <script>
+            
+           var d = new Date();
+           var Hours = d.getHours();
+           document.write(Hours);
+        </script>
+        <br/>
+        <script>
+        var d = new Date();
+        var milsec = d.getMilliseconds();
+        document.write(milsec);
+        </script>
+        <br/>
+        <script>
+            var d = new Date();
+            var sec = d.getSeconds();
+            document.write(sec);
+        </script>
+        <br/>
+        <script>
+            var d = new Date();
+            var min = d.getMinutes();
+            document.write(min);
+        </script>
+        <br/>
+        <script>
+            var days =  ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+            var d = new Date();
+            var dy = d.getDay();
+            var todayDate = days[dy];
+            document.write(todayDate);
+
+        </script>
+        <br/>
+         <script>
+            var d = new Date();
+            var tim = d.getTime();
+            document.write(tim);
+        </script>
+        <br/>
+        
+        
+        <script>
+            var today = new Date();
+            var dmsday = new Date("june 20, 2030");
+            var mstoday = today.getTime();
+            var dsdmsday = dmsday.getTime();
+            var msdiff = dsdmsday - mstoday;
+            
+
+            document.write(msdiff);
+            
+        </script>
+        <br/>
+        <script>
+            var msDiff = new Date("June 30, 2035").getTime() - new Date().getTime();
+            var daysTillDoom = Mathfloor(msDiff / (1000 * 60 * 60 * 24));
+              document.write(daysTillDoom);
+        </script>
+        
+        <br/>
+        <script>
+            var d = new Date();
+                d.setFullYear(2001);
+
+            document.write(d);
+        </script>
+        <script>
+            var d = new Date();
+             d.setDate(5);
+            document.write(d);
+        </script>
+    </body>
+   
+</html>
