@@ -31,10 +31,10 @@ and open the template in the editor.
           <script>
                  var a = 2;
                  var b = 3;    
-             function info(a, b){  
-                 var x = a * b;
-                 return x;      
-             }
+                 function info(a, b){  
+                    var x = a * b;
+                    return x;      
+                   }
          </script>
           <input type="submit" value="info" onclick="document.write(info(a, b))">
           <br/>
@@ -59,11 +59,26 @@ and open the template in the editor.
                <input type="submit" value="info" onclick="document.write(x(a, b))">
                <br/>
                <br/>
+          <script>
+           
+            function setCookie(cname,cvalue)
+            {
+                cvalue = "shubham";
+                document.cookie = cname + "=" + cvalue;
+            }
+          </script>
+       
+          <script>
+           
+                 document.cookie = "username=cvalue";
+                 var x = document.cookie;
+                 alert(x);
+          </script>
                 <script>
             var m = "march";
             var string = "s winner number is";
             var num = "23";
-      function showMessage(m, string, num){
+            function showMessage(m, string, num){
             alert(m+"'" + string +" "+ num);
             }
         </script>
@@ -101,15 +116,14 @@ and open the template in the editor.
          
          <script>
             
-             function add(){
+                 function add(){
                  var theSum = 5+7;
-                
                  return theSum;
              }
          </script>
-           <input type="submit" value="Sum" onclick="document.write(add())">
+                  <input type="submit" value="Sum" onclick="document.write(add())">
            <script>
-               var theSum = add();
+                  var theSum = add();
                   document.write(theSum);
            </script>
     </body>
